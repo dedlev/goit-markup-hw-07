@@ -18,8 +18,8 @@
   <body>
     <!-- Панель навігації -->
 
-    <header class="header heder--border-bottom container">
-      <div class="main-nav">
+    <header class="header">
+      <div class="main-nav main-nav__container container">
         <nav class="main-nav__navi">
           <a href="./index.html" class="logo"
             >Web<span class="logo__text logo__text--black">Studio</span></a
@@ -68,13 +68,13 @@
         <div class="overlay">
           <div class="hero hero__container container">
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="hero__btn" data-modal-open>
+            <button type="button" class="button hero__btn" data-modal-open>
               Замовити послугу
             </button>
             <div class="backdrop is-hidden" data-modal>
               <div class="modal-wrapper">
                 <div class="modal-btn" data-modal-close>
-                  <svg class="modal-close" width="30" height="30">
+                  <svg class="modal-btn__icon" width="30" height="30">
                     <use href="./images/icons.svg#icon-close"></use>
                   </svg>
                 </div>
@@ -163,9 +163,7 @@
                       </label>
                     </div>
 
-                    <button class="modal-form__submit-btn" type="submit">
-                      Відправити
-                    </button>
+                    <button class="submit-btn" type="submit">Відправити</button>
                   </form>
                 </div>
               </div>
@@ -175,9 +173,9 @@
       </section>
 
       <!-- Переваги -->
-      <section class="section advantages">
+      <section class="advantages section">
         <div class="container">
-          <h2 class="visually-hidden">Переваги</h2>
+          <h2 class="section-title visually-hidden">Переваги</h2>
           <!-- заголовок скриється в css   -->
           <ul class="advantages-list list">
             <!-- <ul class="advantages-list list grid"> -->
@@ -732,7 +730,7 @@
               name="mail"
               placeholder="E-mail"
             />
-            <button type="submit" class="button-subscribe">
+            <button type="submit" class="button button-subscribe">
               <span>Підписатися</span>
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
