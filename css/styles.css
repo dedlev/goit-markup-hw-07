@@ -100,16 +100,30 @@ p {
   transition: color 250ms var(--timing-function);
 }
 
-.logo-black:hover {
+.logo__text--black:hover {
   color: var(--accent-color);
 }
 
-.navi {
+.site-nav--margin-left {
+  margin-left: 93px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__navi {
   display: flex;
   align-items: center;
 }
 
-.site-nav .link {
+.site-nav {
+  display: flex;
+}
+
+.site-nav__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -124,7 +138,7 @@ p {
   transition: color 250ms var(--timing-function);
 }
 
-.site-link::after {
+.site-nav__link::after {
   position: absolute;
   content: '';
   bottom: 0;
@@ -138,25 +152,20 @@ p {
   opacity: 0;
 }
 
-.site-link.current::after {
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav__link--current::after {
   opacity: 1;
 }
 
-.site-link:hover,
-.site-link:focus {
+.site-nav__link--current {
   color: var(--accent-color);
 }
 
-.site-link.current {
-  color: var(--accent-color);
-}
-
-.site-nav {
-  display: flex;
-  margin-left: 93px;
-}
-
-.site-nav .item + .item {
+.site-nav__item:not(:first-child) {
   margin-left: 50px;
 }
 
@@ -165,14 +174,8 @@ p {
   align-items: center;
 }
 
-.info-nav .item + .item {
+.info-nav__item:not(:first-child) {
   margin-left: 50px;
-}
-
-.main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .info-link {
@@ -186,12 +189,12 @@ p {
   transition: color 250ms var(--timing-function);
 }
 
-.info-link:hover,
-.info-link:focus {
+.info-nav__link:hover,
+.info-nav__link:focus {
   color: var(--accent-color);
 }
 
-.info-icon {
+.info-nav__icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -205,7 +208,7 @@ p {
 
 /* секція герой */
 
-.hero .container {
+.hero__container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -228,7 +231,7 @@ p {
   color: var(--primary-white-color);
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -244,7 +247,7 @@ p {
   text-transform: uppercase;
 }
 
-.hero-btn {
+.hero__btn {
   padding: 10px 32px;
   font-family: inherit;
   font-size: 16px;
@@ -263,8 +266,8 @@ p {
     color 250ms var(--timing-function);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: var(--primary-white-color);
   color: #2f303a;
 }
@@ -763,7 +766,7 @@ p {
   transition: color 250ms var(--timing-function);
 }
 
-.logo-white:hover {
+.logo__text--white:hover {
   color: var(--accent-color);
 }
 
