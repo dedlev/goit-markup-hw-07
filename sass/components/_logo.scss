@@ -1,0 +1,38 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.78px;
+  text-decoration: none;
+
+  color: var(--accent-color);
+
+  // &__footer {
+  //   margin-bottom: 20px;
+  // }
+}
+
+.logo__footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo__text {
+  &--black {
+    color: #000000;
+    transition: color 250ms var(--timing-function);
+  }
+  &--black:hover {
+    color: var(--accent-color);
+  }
+
+  &--white {
+    color: var(--primary-white-color);
+    transition: color 250ms var(--timing-function);
+  }
+
+  &--white:hover {
+    color: var(--accent-color);
+  }
+}

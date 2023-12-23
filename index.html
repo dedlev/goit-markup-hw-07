@@ -26,21 +26,23 @@
             <a href="./index.html" class="logo"
               >Web<span class="logo__text logo__text--black">Studio</span></a
             >
-            <ul class="site-nav site-nav--margin-left list">
-              <li class="site-nav__item">
-                <a class="site-nav__link site-nav__link--current link" href=""
-                  >Студія</a
-                >
-              </li>
-              <li class="site-nav__item">
-                <a class="site-nav__link link" href="./portfolio.html"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="site-nav__item">
-                <a class="site-nav__link link" href="">Контакти</a>
-              </li>
-            </ul>
+            <div class="header__site-nav">
+              <ul class="site-nav list">
+                <li class="site-nav__item">
+                  <a class="site-nav__link site-nav__link--current link" href=""
+                    >Студія</a
+                  >
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="">Контакти</a>
+                </li>
+              </ul>
+            </div>
           </nav>
           <ul class="info-nav list">
             <li class="info-nav__item">
@@ -137,7 +139,7 @@
                     <!-- політика прватності -->
 
                     <div class="modal-form__policy">
-                      <label class="modal-form__label-policy">
+                      <label class="modal-form__policy-label">
                         <input
                           class="modal-form__checkbox visually-hidden"
                           type="checkbox"
@@ -166,7 +168,9 @@
                       </label>
                     </div>
 
-                    <button class="submit-btn" type="submit">Відправити</button>
+                    <button class="button submit-btn" type="submit">
+                      Відправити
+                    </button>
                   </form>
                 </div>
               </div>
@@ -657,18 +661,18 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__address">
-          <a href="./index.html" class="logo footer__logo"
+          <a href="./index.html" class="logo logo__footer"
             >Web<span class="logo__text logo__text--white">Studio</span></a
           >
           <p>м. Київ, пр-т Лесі Українки, 26</p>
           <ul class="footer__list list">
             <li class="footer__item">
-              <a class="footer__link" href="mailto:info@devstudio.com"
+              <a class="footer__link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="tel:+38-096-111-11-11"
+              <a class="footer__link link" href="tel:+38-096-111-11-11"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -740,11 +744,9 @@
               name="mail"
               placeholder="E-mail"
             />
-            <button type="submit" class="button subscribe__button">
-              <span class="subscribe-text subscribe-text--left"
-                >Підписатися</span
-              >
-              <svg class="subscribe__icon" width="24" height="24">
+            <button type="submit" class="button subscribe-btn">
+              <span class="subscribe-btn__text">Підписатися</span>
+              <svg class="subscribe-btn__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
