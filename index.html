@@ -19,14 +19,14 @@
   <body>
     <!-- Панель навігації -->
 
-    <header class="header">
+    <header class="page-header">
       <div class="container">
-        <div class="main-nav container__main-nav">
+        <div class="main-nav main-nav__container">
           <nav class="main-nav__navi">
             <a href="./index.html" class="logo"
               >Web<span class="logo__text logo__text--black">Studio</span></a
             >
-            <div class="header__site-nav">
+            <div class="site-nav__header">
               <ul class="site-nav list">
                 <li class="site-nav__item">
                   <a class="site-nav__link site-nav__link--current link" href=""
@@ -44,18 +44,18 @@
               </ul>
             </div>
           </nav>
-          <ul class="info-nav list">
-            <li class="info-nav__item">
-              <a class="info-nav__link link" href="mailto:info@devstudio.com"
-                ><svg class="info-nav__icon" width="16" height="12">
+          <ul class="contacts list">
+            <li class="contacts__item">
+              <a class="contacts__link link" href="mailto:info@devstudio.com"
+                ><svg class="contacts__icon" width="16" height="12">
                   <use href="./images/icons.svg#envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li class="info-nav__item">
-              <a class="info-nav__link link" href="tel:+38-096-111-11-11"
-                ><svg class="info-nav__icon" width="10" height="16">
+            <li class="contacts__item">
+              <a class="contacts__link link" href="tel:+38-096-111-11-11"
+                ><svg class="contacts__icon" width="10" height="16">
                   <use href="./images/icons.svg#smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -665,14 +665,16 @@
             >Web<span class="logo__text logo__text--white">Studio</span></a
           >
           <p>м. Київ, пр-т Лесі Українки, 26</p>
-          <ul class="footer__list list">
-            <li class="footer__item">
-              <a class="footer__link link" href="mailto:info@devstudio.com"
+          <ul class="footer-contacts__list list">
+            <li class="footer-contacts__item">
+              <a
+                class="footer-contacts__link link"
+                href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="footer__item">
-              <a class="footer__link link" href="tel:+38-096-111-11-11"
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__link link" href="tel:+38-096-111-11-11"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -735,7 +737,7 @@
             </li>
           </ul>
         </div>
-        <form class="subscribe footer__subscribe">
+        <form class="subscribe subscribe__footer">
           <b class="footer__title">Підпишіться на розсилку</b>
           <div class="subscribe__items">
             <input

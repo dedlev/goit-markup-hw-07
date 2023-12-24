@@ -1,3 +1,5 @@
+/* modal-wraper */
+
 .modal-wrapper {
   position: absolute;
   left: 50%;
@@ -14,6 +16,7 @@
   transition: transform 250ms var(--timing-function);
 }
 
+/* modal-btn */
 .modal-btn__icon {
   position: absolute;
   top: 8px;
@@ -30,6 +33,7 @@
   }
 }
 
+/* submit-btn */
 .submit-btn {
   padding: 10px 52px;
 

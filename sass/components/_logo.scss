@@ -1,5 +1,7 @@
+/*  logo  */
+
 .logo {
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondary-font);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
@@ -7,11 +9,9 @@
   text-decoration: none;
 
   color: var(--accent-color);
-
-  // &__footer {
-  //   margin-bottom: 20px;
-  // }
 }
+
+/* logo footer */
 
 .logo__footer {
   display: inline-block;

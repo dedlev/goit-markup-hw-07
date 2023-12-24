@@ -9,9 +9,18 @@
 @import './base/card-set';
 
 // components
+@import './components/page__header';
+@import './components/contacts';
 @import './components/button';
 @import './components/socials';
 @import './components/logo';
 @import './components/modal-form/module';
 
 // layouts
+@import './layouts/hero';
+@import './layouts/advantages';
+@import './layouts/directions';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/portfolio';
+@import './layouts/footer';
