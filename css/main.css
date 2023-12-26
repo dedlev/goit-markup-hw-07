@@ -252,8 +252,10 @@ p {
   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 .hero-btn:hover, .hero-btn:focus {
-  background-color: var(--primary-white-color);
   color: #2f303a;
+  background-color: var(--primary-white-color);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /*  submit button  */
@@ -315,14 +317,14 @@ p {
 }
 .portfolio-btn--current {
   padding: 6px 25px;
-  background-color: var(--accent-color);
   color: var(--primary-white-color);
+  background-color: var(--accent-color);
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .portfolio-btn:hover, .portfolio-btn:focus {
-  background-color: var(--accent-color);
   color: var(--primary-white-color);
+  background-color: var(--accent-color);
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
@@ -434,6 +436,24 @@ p {
   color: var(--accent-color);
 }
 
+.logo__text--black {
+  color: #000000;
+  -webkit-transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
+}
+.logo__text--black:hover {
+  color: var(--accent-color);
+}
+
+.logo__tex--white {
+  color: var(--primary-white-color);
+  -webkit-transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
+}
+.logo__tex--white:hover {
+  color: var(--accent-color);
+}
+
 /* modal-wraper */
 .modal-wrapper {
   position: absolute;
@@ -508,14 +528,6 @@ p {
   -webkit-transition: border-color 250ms var(--timing-function);
   transition: border-color 250ms var(--timing-function);
 }
-.modal-form__icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  fill: var(--title-text-color);
-  -webkit-transition: fill 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function);
-}
 .modal-form__textarea {
   margin-bottom: 20px;
 }
@@ -523,6 +535,15 @@ p {
 .modal-form__input:focus {
   border-color: var(--accent-color);
   outline: transparent;
+}
+
+.modal-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: var(--title-text-color);
+  -webkit-transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 .modal-form__input:focus ~ .modal-form__icon {
   fill: var(--accent-color);
@@ -692,7 +713,8 @@ p {
   opacity: 0;
   pointer-events: none;
 }
-.backdrop.is-hidden .modal-wrapper {
+
+backdrop.is-hidden .modal-wrapper {
   -webkit-transform: translate(-50%, -50%) scale(0.9);
           transform: translate(-50%, -50%) scale(0.9);
 }
@@ -847,7 +869,8 @@ p {
 .clients__link:hover, .clients__link:focus {
   border-color: var(--accent-color);
 }
-.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
+
+clients__link:hover .clients__icon, clients__link:focus .clients__icon {
   fill: var(--accent-color);
 }
 
@@ -980,6 +1003,7 @@ p {
   -webkit-transition: color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
 }
+
 .footer-contacts__link:hover, .footer-contacts__link:focus {
   color: var(--accent-color);
 }
@@ -1008,16 +1032,19 @@ p {
   -webkit-transition: outline 250ms var(--timing-function);
   transition: outline 250ms var(--timing-function);
 }
+
 .subscribe__input:not(:-moz-placeholder-shown) {
   outline: 1px solid rgba(255, 255, 255, 0.3);
   outline-offset: -2px;
   color: var(--primary-white-color);
 }
+
 .subscribe__input:not(:-ms-input-placeholder) {
   outline: 1px solid rgba(255, 255, 255, 0.3);
   outline-offset: -2px;
   color: var(--primary-white-color);
 }
+
 .subscribe__input:focus, .subscribe__input:not(:placeholder-shown) {
   outline: 1px solid rgba(255, 255, 255, 0.3);
   outline-offset: -2px;
