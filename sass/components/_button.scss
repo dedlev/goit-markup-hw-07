@@ -75,20 +75,6 @@
     background-color 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function);
 
-  &--current {
-    padding: 6px 25px;
-
-    @include colors(
-      var(--primary-white-color),
-      var(--accent-color),
-      (
-        0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-        0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-        0px 3px 1px 0px rgba(0, 0, 0, 0.1)
-      )
-    );
-  }
-
   &:hover,
   &:focus {
     @include colors(
@@ -112,4 +98,17 @@
     align-items: center;
     margin-bottom: 50px;
   }
+}
+
+.portfolio-btn--current {
+  padding: 6px 25px;
+  @include colors(
+    var(--primary-white-color),
+    var(--accent-color),
+    (
+      0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+      0px 3px 1px 0px rgba(0, 0, 0, 0.1)
+    )
+  );
 }
