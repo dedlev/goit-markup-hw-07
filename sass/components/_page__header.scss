@@ -1,7 +1,4 @@
 /* page-header */
-@mixin bordered($color) {
-  border-bottom: 1px solid $color;
-}
 
 .main-nav {
   display: flex;
@@ -9,7 +6,7 @@
   align-items: center;
 
   &__container {
-    @include bordered(#ececec);
+    border-bottom: 1px solid #ececec;
   }
 
   &__navi {

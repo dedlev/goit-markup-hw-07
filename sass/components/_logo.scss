@@ -36,3 +36,21 @@
     color: var(--accent-color);
   }
 }
+
+.logo__text--black {
+  color: #000000;
+  transition: color 250ms var(--timing-function);
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.logo__tex--white {
+  color: var(--primary-white-color);
+  transition: color 250ms var(--timing-function);
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}

@@ -43,14 +43,17 @@
 
     transition: color 250ms var(--timing-function);
   }
+}
 
-  &__link:hover,
-  &__link:focus {
+.footer-contacts__link {
+  &:hover,
+  &:focus {
     color: var(--accent-color);
   }
 }
 
 /* footer subscribe */
+
 .subscribe {
   &__footer {
     margin-left: 93px;
@@ -74,9 +77,11 @@
 
     transition: outline 250ms var(--timing-function);
   }
+}
 
-  &__input:focus,
-  &__input:not(:placeholder-shown) {
+.subscribe__input {
+  &:focus,
+  &:not(:placeholder-shown) {
     outline: 1px solid rgba(255, 255, 255, 0.3);
     outline-offset: -2px;
     color: var(--primary-white-color);

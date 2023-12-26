@@ -32,15 +32,3 @@
     fill: var(--accent-color);
   }
 }
-
-/* submit-btn */
-.submit-btn {
-  padding: 10px 52px;
-
-  transition: background 250ms var(--timing-function);
-
-  &:hover,
-  &:focus {
-    background: #188ce8;
-  }
-}

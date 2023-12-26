@@ -29,9 +29,11 @@
   &:focus {
     border-color: var(--accent-color);
   }
+}
 
-  &:hover .clients__icon,
-  &:focus .clients__icon {
+.clients__icon {
+  clients__link:hover &,
+  clients__link:focus & {
     fill: var(--accent-color);
   }
 }

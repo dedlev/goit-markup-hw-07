@@ -57,8 +57,10 @@
     opacity: 0;
     pointer-events: none;
   }
+}
 
-  &.is-hidden .modal-wrapper {
+.modal-wrapper {
+  backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.9);
   }
 }
